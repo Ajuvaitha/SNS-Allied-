@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facilities | SNS College of Allied Health Science - India's First Design Thinking Institution</title>
+    <meta name="description"
+        content="SNS College of Allied Health Science (SNSCAHS) - India's first Design Thinking Allied Health Science college in Coimbatore. Offering B.Sc. Cardiac Technology, Physician Assistant, and more.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#00A0E3',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Font Awesome -->
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;family=Poppins:wght@600;700;800&amp;display=swap"
+        rel="stylesheet">
+
+
+
+    <link rel="icon" type="image/webp" href="../assets/static/Favicon.webp">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body class="antialiased bg-gray-50">
+
+    <!-- Hanging Tag 1: Affiliation -->
+    <div class="fixed top-[22%] right-0 z-50 swing">
+        <div class="bg-gradient-to-br from-green-600 to-emerald-600 text-white px-4 py-6 rounded-l-2xl shadow-2xl">
+            <span class="font-extrabold text-sm uppercase tracking-widest"
+                style="writing-mode: vertical-rl; text-orientation: mixed; letter-spacing: 0.2em;">MGR UNIV</span>
+        </div>
+    </div>
+
+    <!-- Hanging Tag 2: Brochure -->
+    <div class="fixed top-[36%] right-0 z-50 swing" style="animation-delay: 0.3s;">
+        <a href="../pages/brochure.html" target="_blank"
+            class="bg-gradient-to-br from-red-600 to-pink-600 hover:from-red-700 hover:to-pink-700 text-white px-4 py-8 rounded-l-2xl shadow-2xl flex flex-col items-center space-y-3 group transition-all">
+            <i class="fas fa-file-pdf text-2xl group-hover:scale-110 transition-transform duration-300"></i>
+            <span class="font-extrabold text-sm uppercase tracking-widest"
+                style="writing-mode: vertical-rl; text-orientation: mixed; letter-spacing: 0.2em;">BROCHURE</span>
+        </a>
+    </div>
+
+    <!-- Floating CTA Button (Mobile) -->
+    <div class="fixed bottom-6 left-6 z-50 lg:hidden">
+        <a href="../pages/apply-now.html"
+            class="bg-primary-500 hover:bg-primary-600 text-white px-6 py-4 rounded-full shadow-2xl flex items-center space-x-2 pulse-slow">
+            <i class="fas fa-pen-to-square"></i>
+            <span class="font-bold">Apply Now</span>
+        </a>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="../index.html" class="flex items-center space-x-3">
+                    <img src="https://static.ambitionbox.com/assets/v2/images/rs:fit:1280:960:false:false/aHR0cHM6Ly9tZWRpYS5uYXVrcmkuY29tL21lZGlhL2FiY29tcGxvZ28vc25zLWNvbGxlZ2Utb2YtYWxsaWVkLWhlYWx0aC1zY2llbmNlcy1vcmlnaW5hbC5qcGc.png"
+                        alt="SNS Allied Health Science Logo" class="h-16 w-auto">
+                    <div>
+                        <h1 class="text-xl font-bold text-gray-900 leading-tight">SNS College of <br> Allied Health
+                            Science</h1>
+                    </div>
+                </a>
+
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="../index.html" class="text-gray-700 hover:text-primary-600 font-medium">Home</a>
+
+                    <!-- Programs Dropdown -->
+                    <div class="relative group">
+                        <button class="text-gray-700 hover:text-primary-600 font-medium flex items-center">
+                            Programs <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div
+                            class="absolute hidden group-hover:block bg-white shadow-xl rounded-lg py-2 w-64 mt-0 z-50">
+                            <a href="../pages/courses/cardio-pulmonary.html"
+                                class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Cardio Pulmonary Perfusion Care Technology</a>
+                            <a href="../pages/courses/operation-theatre.html"
+                                class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Operation Theatre and Anaesthesia Technology</a>
+                            <a href="../pages/courses/physician-assistant.html"
+                                class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Physician Assistant</a>
+                            <a href="../pages/courses/radiography.html"
+                                class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Radiography and Imaging Technology</a>
+                            <a href="../pages/courses/cardiac-technology.html"
+                                class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Cardiac Technology</a>
+                            <a href="../pages/courses/dialysis-therapy.html"
+                                class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Dialysis Technology</a>
+                            
+                            <a href="../pages/courses/B.Optom.html"
+                                class="block px-4 py-2 hover:bg-primary-50 text-gray-700">B.Optom</a>
+                            <a href="../pages/courses/respiratory-therapy.html"
+                                class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Respiratory Therapy</a>
+                        </div>
+                    </div>
+
+                    <!-- Infrastructure Dropdown -->
+                    <div class="relative group">
+                        <button class="text-primary-600 font-bold font-medium flex items-center">
+                            Infrastructure <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div
+                            class="absolute hidden group-hover:block bg-white shadow-xl rounded-lg py-2 w-48 mt-0 z-50">
+                            <a href="../pages/facilities.html"
+                                class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Facilities</a>
+                            <a href="../pages/gallery.html"
+                                class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Gallery</a>
+                            <a href="../pages/transport.html"
+                                class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Transport</a>
+                        </div>
+                    </div>
+
+                    <!-- Beyond Programs Dropdown -->
+                    <div class="relative group">
+                        <button class="text-gray-700 hover:text-primary-600 font-medium flex items-center">
+                            Beyond Programs <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div
+                            class="absolute hidden group-hover:block bg-white shadow-xl rounded-lg py-2 w-56 mt-0 z-50">
+                            <a href="../pages/sports-clubs.html"
+                                class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Sports &amp; Clubs</a>
+                            <a href="../pages/innovation.html"
+                                class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Innovation Hub</a>
+                            <a href="../pages/events.html"
+                                class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Events &amp; Celebrations</a>
+                            <a href="../pages/success-stories.html"
+                                class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Success Stories</a>
+                        </div>
+                    </div>
+
+                    <!-- Meet Us Dropdown -->
+                    <div class="relative group">
+                        <button class="text-gray-700 hover:text-primary-600 font-medium flex items-center">
+                            Meet Us <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div
+                            class="absolute hidden group-hover:block bg-white shadow-xl rounded-lg py-2 w-56 mt-0 z-50">
+                            <a href="../pages/about.html"
+                                class="block px-4 py-2 hover:bg-primary-50 text-gray-700">About Us</a>
+                            <a href="../pages/contact.html"
+                                class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Contact Us</a>
+                            <a href="../pages/mandatory-disclosure.html"
+                                class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Mandatory Disclosure</a>
+                        </div>
+                    </div>
+
+                    <a href="../pages/apply-now.html"
+                        class="bg-primary-500 hover:bg-primary-600 text-white px-6 py-3 rounded-lg font-bold transition">
+                        Apply Now <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 py-4 space-y-3">
+                <a href="../index.html" class="block text-gray-700 hover:text-primary-600 font-medium py-2">Home</a>
+
+                <!-- Programs -->
+                <div>
+                    <button
+                        class="w-full text-left text-gray-700 hover:text-primary-600 font-medium py-2 flex justify-between items-center"
+                        onclick="document.getElementById('mobile-academics').classList.toggle('hidden')">
+                        Programs <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div id="mobile-academics" class="hidden pl-4 space-y-2 mt-2">
+                        <a href="../pages/courses/cardio-pulmonary.html"
+                            class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Cardio Pulmonary Perfusion Care Technology</a>
+                        <a href="../pages/courses/operation-theatre.html"
+                            class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Operation Theatre and Anaesthesia Technology</a>
+                        <a href="../pages/courses/physician-assistant.html"
+                            class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Physician Assistant</a>
+                        <a href="../pages/courses/radiography.html"
+                            class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Radiography and Imaging Technology</a>
+                        <a href="../pages/courses/cardiac-technology.html"
+                            class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Cardiac Technology</a>
+                        <a href="../pages/courses/dialysis-therapy.html"
+                            class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Dialysis Technology</a>
+                        
+                        <a href="../pages/courses/B.Optom.html"
+                            class="block px-4 py-2 hover:bg-primary-50 text-gray-700">B.Optom</a>
+                        <a href="../pages/courses/respiratory-therapy.html"
+                            class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Respiratory Therapy</a>
+
+                    </div>
+                </div>
+
+                <!-- Infrastructure -->
+                <div>
+                    <button
+                        class="w-full text-left text-gray-700 hover:text-primary-600 font-medium py-2 flex justify-between items-center"
+                        onclick="document.getElementById('mobile-infrastructure').classList.toggle('hidden')">
+                        Infrastructure <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div id="mobile-infrastructure" class="hidden pl-4 space-y-2 mt-2">
+                        <a href="../pages/facilities.html"
+                            class="block text-gray-600 hover:text-primary-600 py-1">Facilities</a>
+                        <a href="../pages/gallery.html"
+                            class="block text-gray-600 hover:text-primary-600 py-1">Gallery</a>
+                        <a href="../pages/transport.html"
+                            class="block text-gray-600 hover:text-primary-600 py-1">Transport</a>
+                    </div>
+                </div>
+
+                <!-- Beyond Programs -->
+                <div>
+                    <button
+                        class="w-full text-left text-gray-700 hover:text-primary-600 font-medium py-2 flex justify-between items-center"
+                        onclick="document.getElementById('mobile-beyond').classList.toggle('hidden')">
+                        Beyond Programs <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div id="mobile-beyond" class="hidden pl-4 space-y-2 mt-2">
+                        <a href="../pages/sports-clubs.html"
+                            class="block text-gray-600 hover:text-primary-600 py-1">Sports &amp; Clubs</a>
+                        <a href="../pages/innovation.html"
+                            class="block text-gray-600 hover:text-primary-600 py-1">Innovation Hub</a>
+                        <a href="../pages/events.html" class="block text-gray-600 hover:text-primary-600 py-1">Events
+                            &amp; Celebrations</a>
+                        <a href="../pages/success-stories.html"
+                            class="block text-gray-600 hover:text-primary-600 py-1">Success Stories</a>
+                    </div>
+                </div>
+
+                <!-- Meet Us -->
+                <div>
+                    <button
+                        class="w-full text-left text-gray-700 hover:text-primary-600 font-medium py-2 flex justify-between items-center"
+                        onclick="document.getElementById('mobile-meetus').classList.toggle('hidden')">
+                        Meet Us <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div id="mobile-meetus" class="hidden pl-4 space-y-2 mt-2">
+                        <a href="../pages/about.html" class="block text-gray-600 hover:text-primary-600 py-1">About
+                            Us</a>
+                        <a href="../pages/contact.html" class="block text-gray-600 hover:text-primary-600 py-1">Contact
+                            Us</a>
+                        <a href="../pages/mandatory-disclosure.html"
+                            class="block text-gray-600 hover:text-primary-600 py-1">Mandatory Disclosure</a>
+                    </div>
+                </div>
+
+                <a href="../pages/apply-now.html"
+                    class="block bg-primary-500 text-white text-center px-6 py-3 rounded-lg font-bold">
+                    Apply Now <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content -->
+
+
+    <section class="relative h-[40vh] min-h-[400px] flex items-center justify-center text-white overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="../assets/static/images/akkied/3 (1).JPG" alt="World-Class Infrastructure"
+                class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+
+            <nav class="mb-6">
+                <div class="flex items-center justify-center space-x-2 text-sm text-white/80">
+                    <a href="../index.html" class="hover:text-white transition">Home</a>
+                    <i class="fas fa-chevron-right text-xs"></i>
+                    <span class="text-white">Facilities</span>
+                </div>
+            </nav>
+
+
+            <h1 class="text-4xl lg:text-6xl font-extrabold mb-6 leading-tight">World-Class Infrastructure</h1>
+            <p class="text-xl lg:text-2xl text-white/90 max-w-4xl mx-auto leading-relaxed">Professional-grade facilities
+                designed to foster clinical expertise, innovation, and holistic wellness</p>
+
+            <!-- Decorative Element -->
+            <div class="mt-8 flex justify-center">
+                <div class="w-24 h-1 bg-primary-500 rounded-full"></div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i class="fas fa-chevron-down text-white/60 text-2xl"></i>
+        </div>
+    </section>
+
+
+    <!-- SPINE Center -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-primary-600 font-bold tracking-wider uppercase text-sm mb-2 block">Student Life</span>
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">SNS SPINE Activity Center</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    A 5-level premier activity center for sports, wellness, and recreation, ensuring a balanced student
+                    life.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Swimming Pool -->
+                <div class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500">
+                    <div class="h-64 overflow-hidden relative">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition z-10"></div>
+                        <img src="../assets/static/images/ahs_uploads/media__1773134455398.jpg" alt="Swimming Pool"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                    </div>
+                    <div class="p-8 bg-white relative z-20">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Swimming Pool</h3>
+                        <p class="text-gray-600 leading-relaxed text-sm">
+                            Professional-grade swimming pool with trained coaches. Swimming regularly lowers stress,
+                            reduces anxiety, and builds physical endurance.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Cricket Center -->
+                <div class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500">
+                    <div class="h-64 overflow-hidden relative">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition z-10"></div>
+                        <img src="../assets/static/images/ahs_uploads/media__1773134455405.jpg" alt="Indoor Cricket Center"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                    </div>
+                    <div class="p-8 bg-white relative z-20">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Indoor Cricket</h3>
+                        <p class="text-gray-600 leading-relaxed text-sm">
+                            All-weather cricket pitch with bowling machines and nets. Professional coaching available
+                            for all skill levels, day or night.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Fitness Center -->
+                <div class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500">
+                    <div class="h-64 overflow-hidden relative">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition z-10"></div>
+                        <img src="../assets/static/images/ahs_uploads/media__1773134455660.jpg" alt="Fitness Center"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                    </div>
+                    <div class="p-8 bg-white relative z-20">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Fitness Center</h3>
+                        <p class="text-gray-600 leading-relaxed text-sm">
+                            Fully-equipped gym with treadmills, strength machines, weights, and boxing kits to ensure
+                            students stay healthy and toned.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Music Studio -->
+                <div class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500">
+                    <div class="h-64 overflow-hidden relative">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition z-10"></div>
+                        <img src="../assets/static/images/ahs_uploads/media__1773134455667.jpg" alt="Music Studio"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                    </div>
+                    <div class="p-8 bg-white relative z-20">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Music Studio</h3>
+                        <p class="text-gray-600 leading-relaxed text-sm">
+                            Professional music studio with recording equipment and instruments. A space for students to
+                            compose, practice, and create.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Dance Studio -->
+                <div class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500">
+                    <div class="h-64 overflow-hidden relative">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition z-10"></div>
+                        <img src="../assets/static/images/ahs_uploads/media__1773134455909.jpg" alt="Beats Dance Studio"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                    </div>
+                    <div class="p-8 bg-white relative z-20">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Dance Studio</h3>
+                        <p class="text-gray-600 leading-relaxed text-sm">
+                            Dedicated space for various dance styles—from classical to contemporary. Enriching life
+                            through movement and expression.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Art Room -->
+                <div class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500">
+                    <div class="h-64 overflow-hidden relative">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition z-10"></div>
+                        <img src="../assets/static/images/ahs_uploads/media__1773134455398.jpg" alt="Art Room"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                    </div>
+                    <div class="p-8 bg-white relative z-20">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Art Studio</h3>
+                        <p class="text-gray-600 leading-relaxed text-sm">
+                            Creative space for drawing, painting, and sculpting. Allowing students to visualize concepts
+                            and express emotions.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Theater -->
+                <div class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500">
+                    <div class="h-64 overflow-hidden relative">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition z-10"></div>
+                        <img src="../assets/static/images/ahs_uploads/media__1773134455405.jpg" alt="Bioskop Theater"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                    </div>
+                    <div class="p-8 bg-white relative z-20">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Bioskop Theater</h3>
+                        <p class="text-gray-600 leading-relaxed text-sm">
+                            Compact digital theater with superior sound and projection. A unique venue for educational
+                            films and entertainment.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Gaming Arena -->
+                <div class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500">
+                    <div class="h-64 overflow-hidden relative">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition z-10"></div>
+                        <img src="../assets/static/images/ahs_uploads/media__1773134455660.jpg" alt="Gaming Arena"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                    </div>
+                    <div class="p-8 bg-white relative z-20">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Gaming Arena</h3>
+                        <p class="text-gray-600 leading-relaxed text-sm">
+                            State-of-the-art gaming space for recreational and competitive esports, fostering strategic
+                            thinking and teamwork.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Rooftop Restaurant -->
+                <div class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500">
+                    <div class="h-64 overflow-hidden relative">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition z-10"></div>
+                        <img src="../assets/static/images/ahs_uploads/media__1773134455667.jpg" alt="Rooftop Restaurant"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                    </div>
+                    <div class="p-8 bg-white relative z-20">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Rooftop Dining</h3>
+                        <p class="text-gray-600 leading-relaxed text-sm">
+                            Fine dining experience with healthy, seasonal meals. A perfect setting for community
+                            interaction and relaxation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academic Facilities -->
+    <section class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">Academic Infrastructure</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Modern learning spaces designed to foster innovation and collaboration.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="bg-white rounded-xl p-8 text-center shadow-lg hover:-translate-y-2 transition duration-300">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-chalkboard-teacher text-3xl text-purple-600"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-900 text-lg mb-2">Smart Classrooms</h3>
+                    <p class="text-sm text-gray-600">Interactive learning with smart boards</p>
+                </div>
+                <div class="bg-white rounded-xl p-8 text-center shadow-lg hover:-translate-y-2 transition duration-300">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-flask text-3xl text-blue-600"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-900 text-lg mb-2">Science Labs</h3>
+                    <p class="text-sm text-gray-600">Physics, Chemistry &amp; Biology labs</p>
+                </div>
+                <div class="bg-white rounded-xl p-8 text-center shadow-lg hover:-translate-y-2 transition duration-300">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-desktop text-3xl text-green-600"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-900 text-lg mb-2">Computer Labs</h3>
+                    <p class="text-sm text-gray-600">State-of-the-art computing facilities</p>
+                </div>
+                <div class="bg-white rounded-xl p-8 text-center shadow-lg hover:-translate-y-2 transition duration-300">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-book text-3xl text-primary-600"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-900 text-lg mb-2">Library</h3>
+                    <p class="text-sm text-gray-600">Comprehensive resource collection</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-20 bg-gradient-to-r from-primary-600 to-primary-800 text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-black/10"></div>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h2 class="text-4xl lg:text-5xl font-bold mb-6">Visit Our Campus</h2>
+            <p class="text-xl lg:text-2xl mb-10 text-white/90 font-light">
+                Experience our professional environment and state-of-the-art clinical laboratories in person.
+            </p>
+            <a href="../pages/contact.html"
+                class="bg-white text-primary-600 hover:bg-gray-100 px-10 py-5 rounded-xl font-bold text-xl shadow-xl transition transform hover:scale-105 inline-block">
+                Schedule Campus Tour
+            </a>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <img src="https://static.ambitionbox.com/assets/v2/images/rs:fit:1280:960:false:false/aHR0cHM6Ly9tZWRpYS5uYXVrcmkuY29tL21lZGlhL2FiY29tcGxvZ28vc25zLWNvbGxlZ2Utb2YtYWxsaWVkLWhlYWx0aC1zY2llbmNlcy1vcmlnaW5hbC5qcGc.png"
+                            alt="SNS Allied Health Science Logo" class="h-12 w-auto bg-white rounded p-1">
+                        <div>
+                            <h3 class="text-white font-bold leading-tight">SNS College of Allied Health Science</h3>
+                        </div>
+                    </div>
+                    <p class="text-sm leading-relaxed">
+                        SNS Kalvi Nagar, Sathy Main Road (NH-209), Kurumbapalayam, Saravanampatti Post, Coimbatore - 641
+                        035.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="../index.html" class="hover:text-white transition">Home</a></li>
+                        <li><a href="../pages/about.html" class="hover:text-white transition">About Us</a></li>
+                        <li><a href="../pages/facilities.html" class="hover:text-white transition">Facilities</a></li>
+                        <li><a href="../pages/gallery.html" class="hover:text-white transition">Gallery</a></li>
+                        <li><a href="../pages/sports-clubs.html" class="hover:text-white transition">Sports &amp;
+                                Clubs</a></li>
+                        <li><a href="../pages/events.html" class="hover:text-white transition">Events &amp;
+                                Celebrations</a></li>
+                        <li><a href="../pages/success-stories.html" class="hover:text-white transition">Success
+                                Stories</a></li>
+                        <li><a href="../pages/transport.html" class="hover:text-white transition">Transport</a></li>
+                        <li><a href="../pages/innovation.html" class="hover:text-white transition">Innovation Hub</a>
+                        </li>
+                        <li><a href="../pages/brochure.html" class="hover:text-white transition">Download Brochure</a>
+                        </li>
+                        <li><a href="../pages/apply-now.html" class="hover:text-white transition">Admissions</a></li>
+                        <li><a href="../pages/contact.html" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-4">Academics</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="../pages/courses/cardio-pulmonary.html" class="hover:text-white transition">B.Sc.
+                                Cardio Pulmonary Perfusion Care Technology</a></li>
+                        <li><a href="../pages/courses/operation-theatre.html" class="hover:text-white transition">B.Sc.
+                                Operation Theatre and Anaesthesia Technology</a></li>
+                        <li><a href="../pages/courses/physician-assistant.html"
+                                class="hover:text-white transition">B.Sc. Physician Assistant</a></li>
+                        <li><a href="../pages/courses/radiography.html" class="hover:text-white transition">B.Sc.
+                                Radiography and Imaging Technology</a></li>
+                        <li><a href="../pages/courses/cardiac-technology.html" class="hover:text-white transition">B.Sc.
+                                Cardiac Technology</a></li>
+                        <li><a href="../pages/courses/dialysis-therapy.html" class="hover:text-white transition">B.Sc.
+                                Dialysis Technology</a></li>
+                        
+                        <li><a href="../pages/courses/B.Optom.html" class="hover:text-white transition">B.Sc.
+                                B.Optom</a></li>
+                        <li><a href="../pages/courses/respiratory-therapy.html"
+                                class="hover:text-white transition">B.Sc. Respiratory Therapy</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-4">Connect</h4>
+                    <ul class="space-y-2 text-sm mb-4">
+                        <li><i class="fas fa-map-marker-alt mr-2"></i>SNS Kalvi Nagar, Sathy Main Road (NH-209),
+                            Coimbatore - 641 035.</li>
+                        <li><a href="tel:+919940956789" class="hover:text-white transition"><i
+                                    class="fas fa-phone mr-2"></i>Admission: +91 99409 56789</a></li>
+                        <li><a href="tel:+917550316701" class="hover:text-white transition"><i
+                                    class="fas fa-phone mr-2"></i>Office: +91 75503 16701</a></li>
+                        <li><a href="mailto:office@snscahs.org" class="hover:text-white transition"><i
+                                    class="fas fa-envelope mr-2"></i>office@snscahs.org</a></li>
+                        <li><a href="mailto:job@snsgroups.com" class="hover:text-white transition"><i
+                                    class="fas fa-briefcase mr-2"></i>Career: job@snsgroups.com</a></li>
+                    </ul>
+                    <div class="flex space-x-3">
+                        <a href="https://www.facebook.com/snsinstitutions" target="_blank"
+                            class="w-10 h-10 bg-gray-800 hover:bg-primary-600 rounded-lg flex items-center justify-center transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/snsacademyorg" target="_blank"
+                            class="w-10 h-10 bg-gray-800 hover:bg-primary-600 rounded-lg flex items-center justify-center transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@snsinstitutions" target="_blank"
+                            class="w-10 h-10 bg-gray-800 hover:bg-primary-600 rounded-lg flex items-center justify-center transition">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/school/snsinstitutions/" target="_blank"
+                            class="w-10 h-10 bg-gray-800 hover:bg-primary-600 rounded-lg flex items-center justify-center transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center text-sm">
+                <p>© 2026 SNS College of Allied Health Science. All rights reserved.</p>
+                <p class="mt-2 text-primary-400 font-semibold">Redesigning Common Minds | We are Design Thinkers</p>
+                <p class="mt-1 text-xs">SNS Core Value: Sincerity, Nobility, Service</p>
+                <p class="mt-3 text-primary-400 font-bold"><i class="fas fa-headset mr-2"></i>Helpline: 95644 23456</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.0/dist/axios.min.js"></script>
+
+    <!-- Instagram Floating Icon -->
+    <a href="https://www.instagram.com/snsinstitutions" class="instagram-float" target="_blank"
+        rel="noopener noreferrer" title="Follow us on Instagram">
+        <i class="fab fa-instagram"></i>
+    </a>
+    <!-- WhatsApp Floating Icon -->
+    <a href="https://wa.me/919940956789" class="whatsapp-float" target="_blank" rel="noopener noreferrer"
+        title="Chat with us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+
+
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply Now | SNS College of Allied Health Science</title>
+    <meta name="description"
+        content="Apply for admissions at SNS College of Allied Health Science. Online admission form.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f0f9ff', 100: '#e0f2fe', 200: '#bae6fd', 300: '#7dd3fc', 400: '#38bdf8', 500: '#00A0E3', 600: '#0284c7', 700: '#0369a1', 800: '#075985', 900: '#0c4a6e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Font Awesome -->
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;family=Poppins:wght@600;700;800&amp;display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" type="image/webp" href="../assets/static/Favicon.webp">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        /* ================= BITRIX FORM RESET ================= */
+        .b24-form-wrapper {
+            background: transparent !important;
+            border: none !important;
+            padding: 0 !important;
+            box-shadow: none !important;
+            margin: 0 !important;
+        }
+
+        .b24-form-header {
+            display: none !important;
+        }
+
+        .b24-form-field {
+            margin-bottom: 24px !important;
+        }
+
+        /* Remove Bitrix auto separators */
+        .b24-form-separator,
+        .b24-form-field-separator,
+        .b24-form-field::before,
+        .b24-form-field::after {
+            display: none !important;
+            content: none !important;
+            height: 0 !important;
+            border: none !important;
+        }
+
+        /* ================= LABEL HANDLING ================= */
+        .b24-form-control-label {
+            position: absolute !important;
+            opacity: 0 !important;
+            pointer-events: none !important;
+        }
+
+        /* ================= INPUT FIELDS ================= */
+        .b24-form-control {
+            width: 100% !important;
+            background: #f7fafc !important;
+            border: 2px solid #e2e8f0 !important;
+            border-radius: 12px !important;
+            padding: 14px 18px !important;
+            font-size: 15px !important;
+            font-family: 'Poppins', sans-serif !important;
+            color: #1a202c !important;
+            box-shadow: none !important;
+            transition: all 0.3s ease !important;
+        }
+
+        .b24-form-control::placeholder {
+            color: #a0aec0 !important;
+            font-weight: 400 !important;
+        }
+
+        .b24-form-control:focus {
+            border-color: #00A0E3 !important;
+            background: #ffffff !important;
+            outline: none !important;
+            box-shadow: 0 0 0 3px rgba(0, 160, 227, 0.1) !important;
+        }
+
+        /* ================= DROPDOWN ================= */
+        .b24-form-dropdown {
+            border-radius: 12px !important;
+            border: 2px solid #e2e8f0 !important;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1) !important;
+            background: white !important;
+        }
+
+        .b24-form-dropdown-item {
+            padding: 12px 18px !important;
+            font-size: 15px !important;
+            font-family: 'Poppins', sans-serif !important;
+            color: #1a202c !important;
+            transition: all 0.2s ease !important;
+        }
+
+        .b24-form-dropdown-item:hover {
+            background: #f7fafc !important;
+            color: #00A0E3 !important;
+        }
+
+        /* ================= SUBMIT BUTTON ================= */
+        .b24-form-btn {
+            width: 100% !important;
+            margin-top: 28px !important;
+            padding: 16px 24px !important;
+            border-radius: 12px !important;
+            background: linear-gradient(135deg, #00A0E3 0%, #0284c7 100%) !important;
+            color: #ffffff !important;
+            font-size: 16px !important;
+            font-weight: 600 !important;
+            border: none !important;
+            font-family: 'Poppins', sans-serif !important;
+            cursor: pointer !important;
+            transition: all 0.3s ease !important;
+            box-shadow: 0 4px 15px rgba(0, 160, 227, 0.4) !important;
+        }
+
+        .b24-form-btn:hover {
+            transform: translateY(-2px) !important;
+            box-shadow: 0 6px 20px rgba(0, 160, 227, 0.5) !important;
+        }
+
+        .b24-form-btn:active {
+            transform: translateY(0) !important;
+        }
+
+        /* ================= FOOTER TEXT ================= */
+        .b24-form-sign {
+            margin-top: 24px !important;
+            font-size: 12px !important;
+            color: #a0aec0 !important;
+            text-align: center !important;
+        }
+    </style>
+</head>
+
+<body class="antialiased bg-gray-50">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="../index.html" class="flex items-center space-x-3">
+                    <img src="https://static.ambitionbox.com/assets/v2/images/rs:fit:1280:960:false:false/aHR0cHM6Ly9tZWRpYS5uYXVrcmkuY29tL21lZGlhL2FiY29tcGxvZ28vc25zLWNvbGxlZ2Utb2YtYWxsaWVkLWhlYWx0aC1zY2llbmNlcy1vcmlnaW5hbC5qcGc.png"
+                        alt="SNS Allied Health Science Logo" class="h-16 w-auto">
+                    <div>
+                        <h1 class="text-xl font-bold text-gray-900 leading-tight">SNS College of <br> Allied Health
+                            Science</h1>
+                    </div>
+                </a>
+
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="../index.html" class="text-gray-700 hover:text-primary-600 font-medium">Home</a>
+
+                    <!-- Programs Dropdown -->
+                    <div class="relative group">
+                        <button class="text-gray-700 hover:text-primary-600 font-medium flex items-center">
+                            Programs <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div
+                            class="absolute hidden group-hover:block bg-white shadow-xl rounded-lg py-2 w-64 mt-0 z-50">
+                            <a href="../pages/courses/cardio-pulmonary.html"
+                                class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Cardio Pulmonary Perfusion
+                                Care Technology</a>
+                            <a href="../pages/courses/operation-theatre.html"
+                                class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Operation Theatre and
+                                Anaesthesia Technology</a>
+                            <a href="../pages/courses/physician-assistant.html"
+                                class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Physician Assistant</a>
+                            <a href="../pages/courses/radiography.html"
+                                class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Radiography and Imaging
+                                Technology</a>
+                            <a href="../pages/courses/cardiac-technology.html"
+                                class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Cardiac Technology</a>
+                            <a href="../pages/courses/dialysis-therapy.html"
+                                class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Dialysis Technology</a>
+
+                            <a href="../pages/courses/B.Optom.html"
+                                class="block px-4 py-2 hover:bg-primary-50 text-gray-700">B.Optom</a>
+                            <a href="../pages/courses/respiratory-therapy.html"
+                                class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Respiratory Therapy</a>
+                        </div>
+                    </div>
+
+                    <!-- Infrastructure Dropdown -->
+                    <div class="relative group">
+                        <button class="text-gray-700 hover:text-primary-600 font-medium flex items-center">
+                            Infrastructure <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div
+                            class="absolute hidden group-hover:block bg-white shadow-xl rounded-lg py-2 w-48 mt-0 z-50">
+                            <a href="../pages/facilities.html"
+                                class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Facilities</a>
+                            <a href="../pages/gallery.html"
+                                class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Gallery</a>
+                            <a href="../pages/transport.html"
+                                class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Transport</a>
+                        </div>
+                    </div>
+
+                    <!-- Beyond Programs Dropdown -->
+                    <div class="relative group">
+                        <button class="text-gray-700 hover:text-primary-600 font-medium flex items-center">
+                            Beyond Programs <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div
+                            class="absolute hidden group-hover:block bg-white shadow-xl rounded-lg py-2 w-56 mt-0 z-50">
+                            <a href="../pages/sports-clubs.html"
+                                class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Sports &amp; Clubs</a>
+                            <a href="../pages/innovation.html"
+                                class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Innovation Hub</a>
+                            <a href="../pages/events.html"
+                                class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Events &amp; Celebrations</a>
+                            <a href="../pages/success-stories.html"
+                                class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Success Stories</a>
+                        </div>
+                    </div>
+
+                    <!-- Meet Us Dropdown -->
+                    <div class="relative group">
+                        <button class="text-gray-700 hover:text-primary-600 font-medium flex items-center">
+                            Meet Us <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div
+                            class="absolute hidden group-hover:block bg-white shadow-xl rounded-lg py-2 w-56 mt-0 z-50">
+                            <a href="../pages/about.html"
+                                class="block px-4 py-2 hover:bg-primary-50 text-gray-700">About Us</a>
+                            <a href="../pages/contact.html"
+                                class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Contact Us</a>
+                            <a href="../pages/mandatory-disclosure.html"
+                                class="block px-4 py-2 hover:bg-primary-50 text-gray-700">Mandatory Disclosure</a>
+                        </div>
+                    </div>
+
+                    <a href="../pages/apply-now.html"
+                        class="bg-primary-500 hover:bg-primary-600 text-white px-6 py-3 rounded-lg font-bold transition">
+                        Apply Now <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                    <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+                <div class="px-4 py-4 space-y-3">
+                    <a href="../index.html" class="block text-gray-700 hover:text-primary-600 font-medium py-2">Home</a>
+
+                    <!-- Programs -->
+                    <div>
+                        <button
+                            class="w-full text-left text-gray-700 hover:text-primary-600 font-medium py-2 flex justify-between items-center"
+                            onclick="document.getElementById('mobile-academics').classList.toggle('hidden')">
+                            Programs <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div id="mobile-academics" class="hidden pl-4 space-y-2 mt-2">
+                            <a href="../pages/courses/cardio-pulmonary.html"
+                                class="block py-1 hover:text-primary-600">Cardio Pulmonary Perfusion Care Technology</a>
+                            <a href="../pages/courses/operation-theatre.html"
+                                class="block py-1 hover:text-primary-600">Operation Theatre and Anaesthesia
+                                Technology</a>
+                            <a href="../pages/courses/physician-assistant.html"
+                                class="block py-1 hover:text-primary-600">Physician Assistant</a>
+                            <a href="../pages/courses/radiography.html"
+                                class="block py-1 hover:text-primary-600">Radiography and Imaging Technology</a>
+                            <a href="../pages/courses/cardiac-technology.html"
+                                class="block py-1 hover:text-primary-600">Cardiac Technology</a>
+                            <a href="../pages/courses/dialysis-therapy.html"
+                                class="block py-1 hover:text-primary-600">Dialysis Technology</a>
+
+                            <a href="../pages/courses/B.Optom.html"
+                                class="block py-1 hover:text-primary-600">B.Optom</a>
+                            <a href="../pages/courses/respiratory-therapy.html"
+                                class="block py-1 hover:text-primary-600">Respiratory Therapy</a>
+                            Courses</a>
+                        </div>
+                    </div>
+
+                    <!-- Infrastructure -->
+                    <div>
+                        <button
+                            class="w-full text-left text-gray-700 hover:text-primary-600 font-medium py-2 flex justify-between items-center"
+                            onclick="document.getElementById('mobile-infrastructure').classList.toggle('hidden')">
+                            Infrastructure <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div id="mobile-infrastructure" class="hidden pl-4 space-y-2 mt-2">
+                            <a href="../pages/facilities.html" class="block py-1 hover:text-primary-600">Facilities</a>
+                            <a href="../pages/gallery.html" class="block py-1 hover:text-primary-600">Gallery</a>
+                            <a href="../pages/transport.html" class="block py-1 hover:text-primary-600">Transport</a>
+                        </div>
+                    </div>
+
+                    <!-- Beyond Programs -->
+                    <div>
+                        <button
+                            class="w-full text-left text-gray-700 hover:text-primary-600 font-medium py-2 flex justify-between items-center"
+                            onclick="document.getElementById('mobile-beyond').classList.toggle('hidden')">
+                            Beyond Programs <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div id="mobile-beyond" class="hidden pl-4 space-y-2 mt-2">
+                            <a href="../pages/sports-clubs.html" class="block py-1 hover:text-primary-600">Sports &amp;
+                                Clubs</a>
+                            <a href="../pages/innovation.html" class="block py-1 hover:text-primary-600">Innovation
+                                Hub</a>
+                            <a href="../pages/events.html" class="block py-1 hover:text-primary-600">Events &amp;
+                                Celebrations</a>
+                            <a href="../pages/success-stories.html" class="block py-1 hover:text-primary-600">Success
+                                Stories</a>
+                        </div>
+                    </div>
+
+                    <!-- Meet Us -->
+                    <div>
+                        <button
+                            class="w-full text-left text-gray-700 hover:text-primary-600 font-medium py-2 flex justify-between items-center"
+                            onclick="document.getElementById('mobile-meetus').classList.toggle('hidden')">
+                            Meet Us <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div id="mobile-meetus" class="hidden pl-4 space-y-2 mt-2">
+                            <a href="../pages/about.html" class="block py-1 hover:text-primary-600">About Us</a>
+                            <a href="../pages/contact.html" class="block py-1 hover:text-primary-600">Contact Us</a>
+                            <a href="../pages/mandatory-disclosure.html"
+                                class="block py-1 hover:text-primary-600">Mandatory Disclosure</a>
+                        </div>
+                    </div>
+
+                    <a href="../pages/apply-now.html"
+                        class="block bg-primary-500 text-white text-center px-6 py-3 rounded-lg font-bold hover:bg-primary-600 transition">
+                        Apply Now <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-[40vh] min-h-[400px] flex items-center justify-center text-white overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="../assets/static/images/akkied/3 (1).JPG" alt="Admissions 2026-27"
+                class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <nav class="mb-6">
+                <div class="flex items-center justify-center space-x-2 text-sm text-white/80">
+                    <a href="../index.html" class="hover:text-white transition">Home</a>
+                    <i class="fas fa-chevron-right text-xs"></i>
+                    <span class="text-white">Admissions</span>
+                </div>
+            </nav>
+
+            <h1 class="text-4xl lg:text-6xl font-extrabold mb-6 leading-tight">Admissions 2026–27</h1>
+            <p class="text-xl lg:text-2xl text-white/90 max-w-4xl mx-auto leading-relaxed">Begin Your Journey in Allied
+                Health Science</p>
+
+            <div class="mt-8 flex justify-center">
+                <div class="w-24 h-1 bg-primary-500 rounded-full"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admission Process Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center mb-12">Admission Process</h2>
+            <div class="space-y-8">
+                <div class="flex items-start">
+                    <div
+                        class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0 mr-6">
+                        <span class="text-2xl font-bold text-primary-600">1</span>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-2">Application Submission</h3>
+                        <p class="text-gray-700">Students must submit the admission enquiry form with basic details
+                            including name, contact information, and preferred course.</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mr-6">
+                        <span class="text-2xl font-bold text-primary-600">2</span>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-2">Eligibility Verification</h3>
+                        <p class="text-gray-700">The admissions team verifies academic eligibility based on 10+2
+                            qualification with Physics, Chemistry, and Biology (PCB).</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div
+                        class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mr-6">
+                        <span class="text-2xl font-bold text-green-600">3</span>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-2">Counselling / Interaction</h3>
+                        <p class="text-gray-700">Applicants may be invited for counselling or interaction to understand
+                            course options and career pathways in Allied Health Science.</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div
+                        class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0 mr-6">
+                        <span class="text-2xl font-bold text-primary-600">4</span>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-2">Admission Confirmation</h3>
+                        <p class="text-gray-700">Selected candidates receive admission confirmation after document
+                            verification and payment of the required fees.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admission and Enquiry Form -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-3xl font-bold mb-8">Get In Touch</h2>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-3xl text-primary-600 mr-4"></i>
+                            <div>
+                                <h3 class="font-bold text-xl mb-2">Address</h3>
+                                <p class="text-gray-700">SNS College of Allied Health Science,<br>SNS Kalvi Nagar,
+                                    Sathy Main Road (NH-209),<br>Vazhiyampalayam, Saravanampatti Post,<br>Coimbatore -
+                                    641 035.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-phone text-3xl text-primary-600 mr-4"></i>
+                            <div>
+                                <h3 class="font-bold text-xl mb-2">Phone</h3>
+                                <p class="text-gray-700">Admission: +91 99409 56789<br>Office: +91 75503 16701</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-envelope text-3xl text-primary-600 mr-4"></i>
+                            <div>
+                                <h3 class="font-bold text-xl mb-2">Email</h3>
+                                <p class="text-gray-700">General: office@snscahs.org<br>Admissions:
+                                    snsadmission@snsgroups.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-clock text-3xl text-primary-600 mr-4"></i>
+                            <div>
+                                <h3 class="font-bold text-xl mb-2">Visit Us</h3>
+                                <p class="text-gray-700">Monday - Friday: 9:00 AM - 5:00 PM<br>Saturday: 9:00 AM - 1:00
+                                    PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="bg-white rounded-2xl shadow-2xl p-0 overflow-hidden border border-gray-100 max-w-2xl mx-auto w-full">
+                    <div class="p-8">
+                        <div class="flex items-center mb-6">
+                            <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-user-graduate text-primary-600 text-xl"></i>
+                            </div>
+                            <h2 class="text-2xl font-bold text-gray-900">Admission and Enquiry Form</h2>
+                        </div>
+
+                        <!-- Loading State -->
+                        <div class="text-center py-10" id="loading">
+                            <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-primary-600 mx-auto mb-4"
+                                style="border-top-color: #00A0E3;">
+                            </div>
+                            <p class="text-gray-600">Loading form...</p>
+                        </div>
+
+                        <!-- Bitrix24 Form -->
+                        <div id="bitrix-form-container"></div>
+                        <script data-b24-form="inline/18/m4ecvi" data-skip-moving="true">
+                                (function (w, d, u) {
+                                    var s = d.createElement('script');
+                                    s.async = true;
+                                    s.src = u + '?' + (Date.now() / 180000 | 0);
+                                    var h = d.getElementsByTagName('script')[0];
+                                    h.parentNode.insertBefore(s, h);
+                                })(window, document, 'https://cdn.bitrix24.com/b11752903/crm/form/loader_18.js');
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <img src="https://static.ambitionbox.com/assets/v2/images/rs:fit:1280:960:false:false/aHR0cHM6Ly9tZWRpYS5uYXVrcmkuY29tL21lZGlhL2FiY29tcGxvZ28vc25zLWNvbGxlZ2Utb2YtYWxsaWVkLWhlYWx0aC1zY2llbmNlcy1vcmlnaW5hbC5qcGc.png"
+                            alt="SNS Allied Health Science Logo" class="h-12 w-auto bg-white rounded p-1">
+                        <div>
+                            <h3 class="text-white font-bold leading-tight">SNS College of Allied Health Science</h3>
+                        </div>
+                    </div>
+                    <p class="text-sm leading-relaxed">
+                        SNS Kalvi Nagar, Sathy Main Road (NH-209), Kurumbapalayam, Saravanampatti Post, Coimbatore - 641
+                        035.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="../index.html" class="hover:text-white transition">Home</a></li>
+                        <li><a href="../pages/about.html" class="hover:text-white transition">About Us</a></li>
+                        <li><a href="../pages/facilities.html" class="hover:text-white transition">Facilities</a></li>
+                        <li><a href="../pages/gallery.html" class="hover:text-white transition">Gallery</a></li>
+                        <li><a href="../pages/sports-clubs.html" class="hover:text-white transition">Sports &amp;
+                                Clubs</a></li>
+                        <li><a href="../pages/events.html" class="hover:text-white transition">Events &amp;
+                                Celebrations</a></li>
+                        <li><a href="../pages/success-stories.html" class="hover:text-white transition">Success
+                                Stories</a></li>
+                        <li><a href="../pages/transport.html" class="hover:text-white transition">Transport</a></li>
+                        <li><a href="../pages/innovation.html" class="hover:text-white transition">Innovation Hub</a>
+                        </li>
+                        <li><a href="../pages/brochure.html" class="hover:text-white transition">Download Brochure</a>
+                        </li>
+                        <li><a href="../pages/apply-now.html" class="hover:text-white transition">Admissions</a></li>
+                        <li><a href="../pages/contact.html" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-4">Academics</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="../pages/courses/cardio-pulmonary.html" class="hover:text-white transition">B.Sc.
+                                Cardio Pulmonary Perfusion Care Technology</a></li>
+                        <li><a href="../pages/courses/operation-theatre.html" class="hover:text-white transition">B.Sc.
+                                Operation Theatre and Anaesthesia Technology</a></li>
+                        <li><a href="../pages/courses/physician-assistant.html"
+                                class="hover:text-white transition">B.Sc.
+                                Physician Assistant</a></li>
+                        <li><a href="../pages/courses/radiography.html" class="hover:text-white transition">B.Sc.
+                                Radiography and Imaging Technology</a></li>
+                        <li><a href="../pages/courses/cardiac-technology.html" class="hover:text-white transition">B.Sc.
+                                Cardiac Technology</a></li>
+                        <li><a href="../pages/courses/dialysis-therapy.html" class="hover:text-white transition">B.Sc.
+                                Dialysis Technology</a></li>
+
+                        <li><a href="../pages/courses/B.Optom.html" class="hover:text-white transition">B.Sc.
+                                B.Optom</a></li>
+                        <li><a href="../pages/courses/respiratory-therapy.html"
+                                class="hover:text-white transition">B.Sc.
+                                Respiratory Therapy</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-4">Connect</h4>
+                    <ul class="space-y-2 text-sm mb-4">
+                        <li><i class="fas fa-map-marker-alt mr-2"></i>SNS Kalvi Nagar, Sathy Main Road (NH-209),
+                            Coimbatore - 641 035.</li>
+                        <li><a href="tel:+919940956789" class="hover:text-white transition"><i
+                                    class="fas fa-phone mr-2"></i>Admission: +91 99409 56789</a></li>
+                        <li><a href="tel:+917550316701" class="hover:text-white transition"><i
+                                    class="fas fa-phone mr-2"></i>Office: +91 75503 16701</a></li>
+                        <li><a href="mailto:office@snscahs.org" class="hover:text-white transition"><i
+                                    class="fas fa-envelope mr-2"></i>office@snscahs.org</a></li>
+                        <li><a href="mailto:job@snsgroups.com" class="hover:text-white transition"><i
+                                    class="fas fa-briefcase mr-2"></i>Career: job@snsgroups.com</a></li>
+                    </ul>
+                    <div class="flex space-x-3">
+                        <a href="https://www.facebook.com/snsinstitutions" target="_blank"
+                            class="w-10 h-10 bg-gray-800 hover:bg-primary-600 rounded-lg flex items-center justify-center transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/snsacademyorg" target="_blank"
+                            class="w-10 h-10 bg-gray-800 hover:bg-primary-600 rounded-lg flex items-center justify-center transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@snsinstitutions" target="_blank"
+                            class="w-10 h-10 bg-gray-800 hover:bg-primary-600 rounded-lg flex items-center justify-center transition">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/school/snsinstitutions/" target="_blank"
+                            class="w-10 h-10 bg-gray-800 hover:bg-primary-600 rounded-lg flex items-center justify-center transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center text-sm">
+                <p>© 2026 SNS College of Allied Health Science. All rights reserved.</p>
+                <p class="mt-2 text-primary-400 font-semibold">Redesigning Common Minds | We are Design Thinkers</p>
+                <p class="mt-1 text-xs">SNS Core Value: Sincerity, Nobility, Service</p>
+                <p class="mt-3 text-primary-400 font-bold"><i class="fas fa-headset mr-2"></i>Helpline: 95644 23456</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Hide loading spinner when form loads
+        setTimeout(function () {
+            var loading = document.getElementById('loading');
+            if (loading) {
+                loading.style.display = 'none';
+            }
+        }, 3000);
+
+        // Advanced Form Fixer for Bitrix24
+        const snsColleges = [
+            "SNS College of Technology",
+            "SNS College of Engineering",
+            "Dr. SNS Rajalakshmi College of Arts and Science",
+            "SNS College of Allied Health Science",
+            "SNS College of Pharmacy",
+            "SNS College of Nursing",
+            "SNS College of Physiotherapy",
+            "Dr. SNS College of Education"
+        ];
+
+        function applyFormFixes() {
+            const fields = document.querySelectorAll('.b24-form-field');
+            fields.forEach(field => {
+                const label = field.querySelector('.b24-form-control-label');
+                const input = field.querySelector('.b24-form-control');
+                const container = field;
+
+                if (label) {
+                    const text = label.textContent.trim();
+
+                    // 1. Remove "Admission To Grade"
+                    if (text.includes('Admission To Grade')) {
+                        container.style.display = 'none';
+                        return;
+                    }
+
+                    // 2. Replace Academy field with "Choose College" Dropdown
+                    if (text.includes('SNSACD') || text.includes('SNS Academy') || text.includes('CBSE SCHOOL')) {
+                        label.textContent = "Choose College *";
+
+                        // If it's not already a select, swap it
+                        if (input && input.tagName !== 'SELECT' && !input.dataset.replaced) {
+                            const select = document.createElement('select');
+                            select.className = input.className;
+                            select.name = input.name;
+                            select.required = true;
+                            select.dataset.replaced = "true";
+
+                            select.innerHTML = '<option value="">Choose College *</option>' +
+                                snsColleges.map(c => `<option value="${c}">${c}</option>`).join('');
+
+                            input.parentNode.replaceChild(select, input);
+
+                            // Handle Bitrix dynamic value binding if needed
+                            select.addEventListener('change', (e) => {
+                                const event = new Event('input', { bubbles: true });
+                                select.dispatchEvent(event);
+                            });
+                        }
+                        return;
+                    }
+
+                    // 3. Rename "Name of the Child" -> "Name of the Candidate"
+                    if (text.includes('Name of the Child')) {
+                        label.textContent = text.replace('Name of the Child', 'Name of the Candidate');
+                        if (input && input.tagName !== 'SELECT') {
+                            let required = text.includes('*');
+                            input.placeholder = 'Name of the Candidate' + (required ? ' *' : '');
+                        }
+                    }
+
+                    // 4. Rename "Parent Name" -> "Parent / Guardian Name"
+                    if (text.includes('Parent Name')) {
+                        label.textContent = text.replace('Parent Name', 'Parent / Guardian Name');
+                        if (input && input.tagName !== 'SELECT') {
+                            let required = text.includes('*');
+                            input.placeholder = 'Parent / Guardian Name' + (required ? ' *' : '');
+                        }
+                    }
+
+                    // Generic Placeholder Fix for other fields
+                    if (input && input.tagName !== 'SELECT' && !input.placeholder) {
+                        let cleanText = text.replace(/\s*\*$/, '').trim();
+                        let required = text.includes('*');
+                        input.placeholder = required ? cleanText + ' *' : cleanText;
+                    }
+                }
+            });
+        }
+
+        // Use MutationObserver for robust dynamic loading handling
+        const observer = new MutationObserver((mutations) => {
+            mutations.forEach((mutation) => {
+                if (mutation.addedNodes.length) {
+                    applyFormFixes();
+                }
+            });
+        });
+
+        const target = document.getElementById('bitrix-form-container');
+        if (target) {
+            observer.observe(target, { childList: true, subtree: true });
+        }
+
+        // Initial apply just in case
+        applyFormFixes();
+
+        // Backup periodic check
+        const fixInterval = setInterval(() => {
+            applyFormFixes();
+            // If the form is clearly loaded and we've hidden fields, we can slow down or stop
+            if (document.querySelector('.b24-form')) {
+                // Keep running to ensure dynamic errors/re-renders stay fixed
+            }
+        }, 1000);
+
+        // Stop interval after 15 seconds to save resources
+        setTimeout(() => clearInterval(fixInterval), 15000);
+
+        // Form submission tracking
+        document.addEventListener('submit', function (e) {
+            if (e.target.classList.contains('b24-form')) {
+                console.log('Form submitted successfully!');
+            }
+        });
+    </script>
+</body>
+
+</html>
