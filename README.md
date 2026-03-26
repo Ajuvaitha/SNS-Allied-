@@ -96,8 +96,8 @@ SNS College of Engineering
 
 ## 📬 Contact
 
-* Email: [your-email@example.com](mailto:your-email@example.com)
-* LinkedIn: https://linkedin.com/in/your-profile
+* Email: ajuvaithak@gmail.com
+* LinkedIn: https://www.linkedin.com/in/ajuvaitha-k-snsinstiution/
 
 ---
 
