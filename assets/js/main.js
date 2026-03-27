@@ -90,4 +90,58 @@
             });
         });
     }
+
+    // Active Navigation Highlighting
+    const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+    
+    document.querySelectorAll('nav a, #mobile-menu a, .fixed.bottom-0 a').forEach(link => {
+        const href = link.getAttribute('href');
+        if (!href || href === '#' || href.startsWith('http') || href.startsWith('tel') || href.startsWith('mailto')) return;
+        
+        const linkPath = href.split('/').pop() || 'index.html';
+        
+        // Ensure accurate matches for specific paths. Exception: empty path => index.html
+        if (linkPath === currentPath) {
+            // Check if it's the bottom fixed nav (Mobile)
+            if (link.closest('.fixed.bottom-0')) {
+                link.classList.remove('text-gray-400');
+                link.classList.add('text-primary-600');
+                // Make the icon bounce or slightly larger for active state
+                const icon = link.querySelector('i');
+                if (icon && !link.closest('.bg-primary-500')) {
+                    icon.classList.add('scale-110');
+                }
+            } else {
+                // Regular Top Nav and Mobile Drawer Menu highlights
+                link.classList.remove('text-gray-700', 'text-gray-600', 'text-gray-400', 'font-medium');
+                link.classList.add('text-primary-600', 'font-bold');
+                
+                // If it's a dropdown link, maybe give it a background cue
+                if (link.classList.contains('px-4')) {
+                    link.classList.add('bg-primary-50');
+                }
+
+                // Highlight parent dropdown button (Desktop)
+                const dropdown = link.closest('.group');
+                if (dropdown) {
+                    const btn = dropdown.querySelector('button');
+                    if (btn) {
+                        btn.classList.remove('text-gray-700', 'font-medium');
+                        btn.classList.add('text-primary-600', 'font-bold');
+                    }
+                }
+                
+                // Highlight parent accordion button (Mobile)
+                const mobileMenuSection = link.closest('div.hidden.pl-4');
+                if (mobileMenuSection && mobileMenuSection.previousElementSibling && mobileMenuSection.previousElementSibling.tagName === 'BUTTON') {
+                    const btn = mobileMenuSection.previousElementSibling;
+                    btn.classList.remove('text-gray-700', 'font-medium');
+                    btn.classList.add('text-primary-600', 'font-bold');
+                    // Automatically open the current active section for mobile view
+                    mobileMenuSection.classList.remove('hidden');
+                }
+            }
+        }
+    });
+
 })();
